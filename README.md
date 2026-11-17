@@ -4,36 +4,38 @@
 
 ## 当前规则
 
-| 规则 | 内容 | 条数 | 数据整理日期 |
+| 规则 | 内容 | 条数 | 更新方式 |
 | --- | --- | ---: | --- |
 | [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 见[同步报告](docs/meta-sync.json) | 自动检查 |
-
-AI 规则：[规则集](rules/AI.list) · [使用及范围说明](docs/AI.md) · [可选进程规则](snippets/AI-processes.txt)。AI 与 Meta 均每日自动检查；AI 发布规则排除 Meta，当前数量见 [AI 同步报告](docs/ai-build.json)。
+| [AI](rules/AI.list) | OpenAI、Claude、Gemini、Copilot、Apple Intelligence 等；排除 Meta 相关条目 | 见[同步报告](docs/ai-build.json) | 自动检查 |
 
 ## 在 Surge 中使用
 
-在已有配置的 `[Rule]` 段添加以下规则，将 `META` 替换为已有策略组或节点名称：
+在已有配置的 `[Rule]` 段添加以下规则，将 `META` 和 `AI` 分别替换为已有策略组或节点名称：
 
 ```ini
 RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/Meta.list,META,extended-matching
+RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/AI.list,AI
 ```
 
-放在希望被其覆盖的整机分流规则以及 `FINAL` 之前。是否优先于广告拦截规则，请按自己的需求决定。这条规则适用于所有设备，不限定 MAC 地址。
+放在希望被其覆盖的整机分流规则以及 `FINAL` 之前。是否优先于广告拦截规则，请按自己的需求决定。这两条规则适用于所有设备，不限定 MAC 地址。
 
 - [Meta Raw 订阅地址](https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/Meta.list)
-- [直接粘贴版](snippets/Meta.txt)：与规则集二选一，不必重复添加；同样需要替换 `META`。
-- [来源与覆盖说明](docs/Meta.md)
+- [AI Raw 订阅地址](https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/AI.list)
+- 直接粘贴版：[Meta](snippets/Meta.txt)、[AI](snippets/AI.txt)。与对应规则集二选一，不必重复添加；同样需要替换策略名称。
+- 来源与覆盖说明：[Meta](docs/Meta.md)、[AI](docs/AI.md)。
+- [可选 macOS 进程规则](snippets/AI-processes.txt)：单独配置，不包含在 AI 订阅内。
 
-`rules/*.list` 不绑定策略；引用时在 `RULE-SET` 外层指定策略。`extended-matching` 用于扩展域名匹配；IP-ASN 条目保留 `no-resolve`。
+`rules/*.list` 不绑定策略；引用时在 `RULE-SET` 外层指定策略。Meta 外层使用 `extended-matching`。AI 保留原有逐条匹配选项，Apple Intelligence 的扩展匹配已写入对应条目，不必给整个 AI 规则集额外添加该参数。IP-ASN 条目保留 `no-resolve`。
 
 ## 自动更新
 
-每天台北时间 **06:23** 在 GitHub 依次检查 Meta 和 AI 上游，自动补充符合条件的缺项、去重并提交；支持手动触发。详见 [自动更新规则与失败处理](docs/Automation.md)，最新来源哈希及待复核项见 [同步报告](docs/meta-sync.json)。
+每天台北时间 **06:23** 在 GitHub 依次检查 Meta 和 AI 上游，自动补充符合条件的缺项、去重并提交；支持手动触发。详见 [自动更新规则与失败处理](docs/Automation.md)，最新来源哈希及待复核项见 [Meta 报告](docs/meta-sync.json)和 [AI 报告](docs/ai-build.json)。AI 每次更新都会排除 Meta 相关条目；源快照保留上游原文用于审计。
 
 ## 维护约定
 
 1. 新服务使用 `rules/服务名.list`，保持已有订阅路径稳定。
-2. 更新时核对来源、去除重复项和父域已覆盖的子域规则，并更新说明和变更记录。
+2. 更新时核对来源、去除重复项和父域已覆盖的子域规则，同步更新 README 中的规则目录、订阅示例、更新方式和使用限制，以及相关说明和变更记录。
 3. 避免无依据加入关键词、共享云平台根域或旧 IP 大网段。
 4. 不存放节点凭据、完整个人配置、设备标识或请求日志。
 5. 提交前做 Surge 离线语法检查；语法通过不代表所有业务功能均验证成功。
