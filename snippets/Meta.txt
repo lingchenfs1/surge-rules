@@ -1,0 +1,139 @@
+# Meta 系 Surge 规则 | 2026-11-16 | 未安装、未加载
+# 将 META 替换为已有策略组/节点名；粘贴至 [Rule]，置于整机 MAC 规则和 FINAL 之前。
+# 全设备适用。社区资料交叉整理，不代表每个域名均完成所有权/存活验证。
+# 品牌、历史兼容和开发者域名也会走相同策略。
+
+# ===== 原有主要产品规则 =====
+DOMAIN-SUFFIX,meta.com,META,extended-matching
+DOMAIN-SUFFIX,meta.ai,META,extended-matching
+DOMAIN-SUFFIX,atmeta.com,META,extended-matching
+DOMAIN-SUFFIX,metaaiusercontent.com,META,extended-matching
+DOMAIN-SUFFIX,metaaivm.com,META,extended-matching
+DOMAIN-SUFFIX,muse.ai,META,extended-matching
+DOMAIN-SUFFIX,llama.com,META,extended-matching
+DOMAIN-SUFFIX,facebook.com,META,extended-matching
+DOMAIN-SUFFIX,facebook.net,META,extended-matching
+DOMAIN-SUFFIX,facebook.org,META,extended-matching
+DOMAIN-SUFFIX,fb.com,META,extended-matching
+DOMAIN-SUFFIX,fb.me,META,extended-matching
+DOMAIN-SUFFIX,fb.gg,META,extended-matching
+DOMAIN-SUFFIX,fb.watch,META,extended-matching
+DOMAIN-SUFFIX,fbcdn.com,META,extended-matching
+DOMAIN-SUFFIX,fbcdn.net,META,extended-matching
+DOMAIN-SUFFIX,fbsbx.com,META,extended-matching
+DOMAIN-SUFFIX,fbsbx.net,META,extended-matching
+DOMAIN-SUFFIX,fburl.com,META,extended-matching
+DOMAIN-SUFFIX,fbwat.ch,META,extended-matching
+DOMAIN-SUFFIX,tfbnw.net,META,extended-matching
+DOMAIN-SUFFIX,facebookmail.com,META,extended-matching
+DOMAIN-SUFFIX,facebookemail.com,META,extended-matching
+DOMAIN-SUFFIX,facebookpay.com,META,extended-matching
+DOMAIN-SUFFIX,messenger.com,META,extended-matching
+DOMAIN-SUFFIX,m.me,META,extended-matching
+DOMAIN-SUFFIX,fbmessenger.com,META,extended-matching
+DOMAIN-SUFFIX,instagram.com,META,extended-matching
+DOMAIN-SUFFIX,cdninstagram.com,META,extended-matching
+DOMAIN-SUFFIX,ig.me,META,extended-matching
+DOMAIN-SUFFIX,igcdn.com,META,extended-matching
+DOMAIN-SUFFIX,igsonar.com,META,extended-matching
+DOMAIN-SUFFIX,igtv.com,META,extended-matching
+DOMAIN-SUFFIX,threads.com,META,extended-matching
+DOMAIN-SUFFIX,threads.net,META,extended-matching
+DOMAIN-SUFFIX,whatsapp.com,META,extended-matching
+DOMAIN-SUFFIX,whatsapp.net,META,extended-matching
+DOMAIN-SUFFIX,whatsapp.biz,META,extended-matching
+DOMAIN-SUFFIX,wa.me,META,extended-matching
+DOMAIN-SUFFIX,whatsappbrand.com,META,extended-matching
+DOMAIN-SUFFIX,oculus.com,META,extended-matching
+DOMAIN-SUFFIX,oculuscdn.com,META,extended-matching
+DOMAIN-SUFFIX,oculusvr.com,META,extended-matching
+DOMAIN-SUFFIX,ocul.us,META,extended-matching
+DOMAIN-SUFFIX,oculusforbusiness.com,META,extended-matching
+DOMAIN-SUFFIX,workplace.com,META,extended-matching
+DOMAIN-SUFFIX,facebookwork.com,META,extended-matching
+DOMAIN-SUFFIX,accountkit.com,META,extended-matching
+DOMAIN-SUFFIX,facebookconnect.com,META,extended-matching
+DOMAIN,fbcdn-a.akamaihd.net,META,extended-matching
+
+# ===== Instagram 短链补充 =====
+DOMAIN-SUFFIX,instagr.am,META,extended-matching
+
+# ===== Facebook 品牌、商业与通知兼容 =====
+DOMAIN-SUFFIX,aboutfacebook.com,META,extended-matching
+DOMAIN-SUFFIX,careersatfb.com,META,extended-matching
+DOMAIN-SUFFIX,facebook.design,META,extended-matching
+DOMAIN-SUFFIX,facebook4business.com,META,extended-matching
+DOMAIN-SUFFIX,facebookads.com,META,extended-matching
+DOMAIN-SUFFIX,facebookblueprint.net,META,extended-matching
+DOMAIN-SUFFIX,facebookbrand.com,META,extended-matching
+DOMAIN-SUFFIX,facebookbrand.net,META,extended-matching
+DOMAIN-SUFFIX,facebookinc.com,META,extended-matching
+DOMAIN-SUFFIX,facebookmarketingpartners.com,META,extended-matching
+DOMAIN-SUFFIX,facebookportal.com,META,extended-matching
+DOMAIN-SUFFIX,fb.careers,META,extended-matching
+DOMAIN-SUFFIX,fbidb.io,META,extended-matching
+DOMAIN-SUFFIX,fbthirdpartypixel.com,META,extended-matching
+DOMAIN-SUFFIX,fbthirdpartypixel.net,META,extended-matching
+DOMAIN-SUFFIX,fbthirdpartypixel.org,META,extended-matching
+DOMAIN-SUFFIX,fbworkmail.com,META,extended-matching
+
+# ===== Instagram 品牌与开发者兼容 =====
+DOMAIN-SUFFIX,instagram-brand.com,META,extended-matching
+DOMAIN-SUFFIX,instagram-engineering.com,META,extended-matching
+DOMAIN-SUFFIX,instagram-press.com,META,extended-matching
+DOMAIN-SUFFIX,instagram-press.net,META,extended-matching
+DOMAIN-SUFFIX,instagrampartners.com,META,extended-matching
+
+# ===== Quest / Oculus 历史兼容 =====
+DOMAIN-SUFFIX,oculusblog.com,META,extended-matching
+DOMAIN-SUFFIX,oculusbrand.com,META,extended-matching
+DOMAIN-SUFFIX,oculusconnect.com,META,extended-matching
+DOMAIN-SUFFIX,oculusrift.com,META,extended-matching
+
+# ===== Workplace 历史兼容 =====
+DOMAIN-SUFFIX,workplaceusecases.com,META,extended-matching
+
+# ===== Meta 相关开发者与开源项目（社区归类） =====
+DOMAIN-SUFFIX,botorch.org,META,extended-matching
+DOMAIN-SUFFIX,buck.build,META,extended-matching
+DOMAIN-SUFFIX,buckbuild.com,META,extended-matching
+DOMAIN-SUFFIX,componentkit.org,META,extended-matching
+DOMAIN-SUFFIX,draftjs.org,META,extended-matching
+DOMAIN-SUFFIX,f8.com,META,extended-matching
+DOMAIN-SUFFIX,fasttext.cc,META,extended-matching
+DOMAIN-SUFFIX,fbf8.com,META,extended-matching
+DOMAIN-SUFFIX,fbinfer.com,META,extended-matching
+DOMAIN-SUFFIX,fblitho.com,META,extended-matching
+DOMAIN-SUFFIX,fbredex.com,META,extended-matching
+DOMAIN-SUFFIX,fbrell.com,META,extended-matching
+DOMAIN-SUFFIX,flow.dev,META,extended-matching
+DOMAIN-SUFFIX,flow.org,META,extended-matching
+DOMAIN-SUFFIX,flowtype.org,META,extended-matching
+DOMAIN-SUFFIX,frescolib.org,META,extended-matching
+DOMAIN-SUFFIX,hacklang.org,META,extended-matching
+DOMAIN-SUFFIX,hhvm.com,META,extended-matching
+DOMAIN-SUFFIX,mcrouter.net,META,extended-matching
+DOMAIN-SUFFIX,mcrouter.org,META,extended-matching
+DOMAIN-SUFFIX,messengerdevelopers.com,META,extended-matching
+DOMAIN-SUFFIX,ogp.me,META,extended-matching
+DOMAIN-SUFFIX,opengraphprotocol.com,META,extended-matching
+DOMAIN-SUFFIX,opengraphprotocol.org,META,extended-matching
+DOMAIN-SUFFIX,pyrobot.org,META,extended-matching
+DOMAIN-SUFFIX,recoiljs.org,META,extended-matching
+DOMAIN-SUFFIX,rocksdb.com,META,extended-matching
+DOMAIN-SUFFIX,rocksdb.net,META,extended-matching
+DOMAIN-SUFFIX,rocksdb.org,META,extended-matching
+DOMAIN-SUFFIX,yogalayout.com,META,extended-matching
+
+# ===== 其他关联服务兼容 =====
+DOMAIN-SUFFIX,crowdtangle.com,META,extended-matching
+DOMAIN-SUFFIX,expresswifi.com,META,extended-matching
+DOMAIN-SUFFIX,freebasics.com,META,extended-matching
+DOMAIN-SUFFIX,freebasics.net,META,extended-matching
+DOMAIN-SUFFIX,internet.org,META,extended-matching
+DOMAIN-SUFFIX,terragraph.com,META,extended-matching
+
+# ===== Meta 网络 IP 兜底 =====
+IP-ASN,32934,META,no-resolve
+IP-ASN,63293,META,no-resolve
+IP-ASN,11917,META,no-resolve
