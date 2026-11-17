@@ -16,7 +16,7 @@ GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以�
 
 ## AI 发布方式
 
-Meta 同步完成后，再通过 scripts/update_ai.py 同步 9 份 AI 清单、增量去重、移除 Meta 条目并运行隐私扫描。AI 抓取及构建在临时目录完成，失败不覆盖发布文件；整个工作流任一步失败均不推送。新域名可自动补充，新关键词/IP/ASN/URL 正则待人工复核。详见 [AI 规则说明](AI.md)。
+Meta 同步完成后，再通过 scripts/update_ai.py 同步 11 份 AI 清单（含 Cursor、Windsurf 专项源）、增量去重、移除 Meta 条目并运行隐私扫描。AI 抓取及构建在临时目录完成，失败不覆盖发布文件；整个工作流任一步失败均不推送。新域名可自动补充，新关键词/IP/ASN/URL 正则待人工复核。详见 [AI 规则说明](AI.md)。
 
 订阅地址保持不变。工作流仅使用 GitHub 提供的临时 GITHUB_TOKEN，权限为本仓库 contents:write，无需保存个人令牌。checkout 固定到提交 SHA；上游仅作为数据解析，绝不执行。
 

@@ -1,5 +1,5 @@
 {
-  "rule_count": 147,
+  "rule_count": 155,
   "excluded_meta": [
     "DOMAIN-SUFFIX,meta.ai"
   ],
@@ -85,12 +85,6 @@
       "rule": "DOMAIN,api.github.com",
       "sources": [
         "https://ruleset.skk.moe/List/non_ip/ai.conf"
-      ]
-    },
-    {
-      "rule": "DOMAIN,api.githubcopilot.com",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
       ]
     },
     {
@@ -231,12 +225,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,inference.codeium.com",
-      "sources": [
-        "https://ruleset.skk.moe/List/non_ip/ai.conf"
-      ]
-    },
-    {
       "rule": "DOMAIN,jules.google.com",
       "sources": [
         "https://ruleset.skk.moe/List/non_ip/ai.conf"
@@ -284,11 +272,29 @@
       ]
     },
     {
+      "rule": "DOMAIN,origin-tracker.githubusercontent.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
       "rule": "DOMAIN,production-openaicom-storage.azureedge.net",
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,q.eu-central-1.amazonaws.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,q.us-east-1.amazonaws.com",
+      "sources": [
+        "manual"
       ]
     },
     {
@@ -313,18 +319,6 @@
       "rule": "DOMAIN,servd-anthropic-website.b-cdn.net",
       "sources": [
         "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN,server.codeium.com",
-      "sources": [
-        "https://ruleset.skk.moe/List/non_ip/ai.conf"
-      ]
-    },
-    {
-      "rule": "DOMAIN,server.self-serve.windsurf.com",
-      "sources": [
-        "https://ruleset.skk.moe/List/non_ip/ai.conf"
       ]
     },
     {
@@ -615,6 +609,18 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,codeium.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/windsurf.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,codeiumdata.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/windsurf.list"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,copilot.cloud.microsoft",
       "sources": [
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
@@ -627,16 +633,36 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,cursor-cdn.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,cursor.com",
       "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list"
       ]
     },
     {
       "rule": "DOMAIN-SUFFIX,cursor.sh",
       "sources": [
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list",
         "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,cursorapi.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,cursorvm.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list"
       ]
     },
     {
@@ -718,6 +744,12 @@
       ]
     },
     {
+      "rule": "DOMAIN-SUFFIX,githubcopilot.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
       "rule": "DOMAIN-SUFFIX,grazie.ai",
       "sources": [
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
@@ -788,6 +820,12 @@
       "rule": "DOMAIN-SUFFIX,jetbrains.ai",
       "sources": [
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,kiro.dev",
+      "sources": [
+        "manual"
       ]
     },
     {
@@ -949,6 +987,18 @@
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,windsurf.build",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/windsurf.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,windsurf.com",
+      "sources": [
+        "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/windsurf.list"
       ]
     },
     {

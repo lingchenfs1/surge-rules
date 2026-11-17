@@ -7,7 +7,7 @@
 | 规则 | 内容 | 条数 | 更新方式 |
 | --- | --- | ---: | --- |
 | [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 见[同步报告](docs/meta-sync.json) | 自动检查 |
-| [AI](rules/AI.list) | OpenAI、Claude、Gemini、Copilot、Apple Intelligence 等；排除 Meta 相关条目 | 见[同步报告](docs/ai-build.json) | 自动检查 |
+| [AI](rules/AI.list) | OpenAI、Claude、Gemini、GitHub Copilot、Cursor、Kiro、Windsurf、Apple Intelligence 等；排除 Meta 相关条目 | 见[同步报告](docs/ai-build.json) | 自动检查 |
 
 ## 在 Surge 中使用
 
@@ -27,6 +27,8 @@ RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/AI
 - [可选 macOS 进程规则](snippets/AI-processes.txt)：单独配置，不包含在 AI 订阅内。
 
 `rules/*.list` 不绑定策略；引用时在 `RULE-SET` 外层指定策略。Meta 外层使用 `extended-matching`。AI 保留原有逐条匹配选项，Apple Intelligence 的扩展匹配已写入对应条目，不必给整个 AI 规则集额外添加该参数。IP-ASN 条目保留 `no-resolve`。
+
+第一批编程助手补充已加入：Cursor 的 API/CDN/云端主机、GitHub Copilot 服务域、Kiro 核心域与两个精确 AWS 服务主机、Windsurf/Codeium 域名。详见 [新增条目和覆盖边界](docs/AI.md#第一批编程助手补充)。
 
 ## 自动更新
 

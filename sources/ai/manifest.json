@@ -72,6 +72,22 @@
       "sha256": "63e70895ac8c04c3b28965dc0b4ba9ceb3a1313a66b49487ed96005debc97e1e",
       "file": "08.list",
       "extended_matching": false
+    },
+    {
+      "id": 9,
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/cursor.list",
+      "lines": 5,
+      "sha256": "163435ec43226a0b8a9322048cd132fc65ae20dc4de7a0bcb3b43d87f32e393c",
+      "file": "09.list",
+      "extended_matching": false
+    },
+    {
+      "id": 10,
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/windsurf.list",
+      "lines": 4,
+      "sha256": "0138b5f69c1ad0e4ca530adb8efd7d201348ad518b1155edd188399576238c55",
+      "file": "10.list",
+      "extended_matching": false
     }
   ]
 }
