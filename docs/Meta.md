@@ -4,7 +4,7 @@
 
 ## 组成
 
-117 条规则：113 条 DOMAIN-SUFFIX、1 条精确 DOMAIN、3 条 IP-ASN。相比最初 51 条版本新增 66 条，包含 Instagram 短链、品牌与开发者域名、历史兼容域名及两个 ASN。
+初次发布为 117 条规则（当前数量见 [同步报告](meta-sync.json)）：113 条 DOMAIN-SUFFIX、1 条精确 DOMAIN、3 条 IP-ASN。相比最初 51 条版本新增 66 条，包含 Instagram 短链、品牌与开发者域名、历史兼容域名及两个 ASN。
 
 Meta AI/Muse 的 hatch-api.meta.ai、hatch.metaaivm.com 分别由 meta.ai、metaaivm.com 覆盖。RaybanMeta 清单的 5 个后缀全部覆盖。没有将眼镜品牌商的整个站点直接视为 Meta App 的依赖。
 
@@ -16,7 +16,7 @@ AS11917、AS32934、AS63293 来自 [Meta 的 PeeringDB 组织登记](https://www
 
 没有直接合并所有候选：未核实的拼写变体、营销及其他历史域名、旧静态 IP、宽泛关键词，以及 bintray.com 等共享基础设施均未纳入。保留的品牌、开发者与历史兼容条目仍属于社区归类，不应理解为逐条获得官方确认。
 
-数据发布后没有自动追踪上游；后续按需求更新。规则与上游之间不是同步镜像。
+现已通过 GitHub Actions 自动检查上游并增量补充，详见 [自动更新说明](Automation.md)。规则与上游之间不是全量同步镜像。
 
 ## 来源
 

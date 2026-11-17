@@ -6,7 +6,7 @@
 
 | 规则 | 内容 | 条数 | 数据整理日期 |
 | --- | --- | ---: | --- |
-| [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 117 | 2026-11-16 |
+| [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 见[同步报告](docs/meta-sync.json) | 自动检查 |
 
 ## 在 Surge 中使用
 
@@ -24,6 +24,10 @@ RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/Me
 
 `rules/*.list` 不绑定策略；引用时在 `RULE-SET` 外层指定策略。`extended-matching` 用于扩展域名匹配；IP-ASN 条目保留 `no-resolve`。
 
+## 自动更新
+
+每天台北时间 **06:23** 在 GitHub 检查上游，自动补充符合条件的缺项、去重并提交；支持手动触发。详见 [自动更新规则与失败处理](docs/Automation.md)，最新来源哈希及待复核项见 [同步报告](docs/meta-sync.json)。
+
 ## 维护约定
 
 1. 新服务使用 `rules/服务名.list`，保持已有订阅路径稳定。
@@ -34,6 +38,6 @@ RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/Me
 
 ## 完整性
 
-规则是社区资料交叉整理的静态清单。多个项目可能使用相同上游，重复收录不等于独立验证。开发者、品牌和历史兼容域名没有逐一完成当前所有权或存活验证；第三方托管、点对点通话及未来新增服务可能无法全部覆盖。
+规则由社区资料交叉整理，并按明确筛选条件定期增量更新。多个项目可能使用相同上游，重复收录不等于独立验证。开发者、品牌和历史兼容域名没有逐一完成当前所有权或存活验证；第三方托管、点对点通话及未来新增服务可能无法全部覆盖。
 
 数据来源保留在各服务说明中；引用的上游材料遵循各自许可，本仓库不将其重新声明为独占原创。

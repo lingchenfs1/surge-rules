@@ -1,0 +1,111 @@
+{
+  "rule_count": 117,
+  "pending": [],
+  "sources": [
+    {
+      "name": "metacubex-meta",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/meta.list",
+      "sha256": "fa0cd6dad3bba2b41ad90616bd0ae699e5590ace95f87a64014a07992a6097fa",
+      "domain_rules": 556
+    },
+    {
+      "name": "g94-rayban",
+      "family": "g94",
+      "url": "https://raw.githubusercontent.com/G94Cloud/CustomRules/main/RaybanMeta.list",
+      "sha256": "7813e52a0d91aa9bc88a46348eb5e8819774945ee7b0e2e735dc54aa08d35c79",
+      "domain_rules": 5
+    },
+    {
+      "name": "lm-facebook",
+      "family": "lm",
+      "url": "https://raw.githubusercontent.com/LM-Firefly/Rules/master/PROXY/Facebook.list",
+      "sha256": "7c00cf951bb0f68b1f466e7a5a61e90c332ba504ae9d770d57f27fb5887c4edb",
+      "domain_rules": 545
+    },
+    {
+      "name": "blackmatrix7-Facebook",
+      "family": "blackmatrix7",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Facebook/Facebook.list",
+      "sha256": "747563c96825bbd5f868be955543b0ca1979064e7b094f8aab08aafbce577c36",
+      "domain_rules": 544
+    },
+    {
+      "name": "blackmatrix7-Instagram",
+      "family": "blackmatrix7",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Instagram/Instagram.list",
+      "sha256": "65f28f9253b0dbb2a81485c788537896a0817766685e7bd91b2f90ec7aa19548",
+      "domain_rules": 3
+    },
+    {
+      "name": "blackmatrix7-Threads",
+      "family": "blackmatrix7",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Threads/Threads.list",
+      "sha256": "e9b86a51952a33ee50ad3b31dc98bcb09699bbeb4d21371762b1124cb0091e86",
+      "domain_rules": 1
+    },
+    {
+      "name": "blackmatrix7-Whatsapp",
+      "family": "blackmatrix7",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Whatsapp/Whatsapp.list",
+      "sha256": "644fd145b484079ff65f681deb17a6dbf1aff620afea56b1a3c24d29d9f9db4f",
+      "domain_rules": 5
+    },
+    {
+      "name": "v2fly-meta",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/meta",
+      "sha256": "25c56292d974a3ac32aff3c187c0a32d84de351ad5d9ca02342cb10c7e152df8",
+      "domain_rules": 7
+    },
+    {
+      "name": "v2fly-facebook",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/facebook",
+      "sha256": "bd860c04a95c82afa1aa86c166a50eb561a952c6915257f941fa6d58a0431da9",
+      "domain_rules": 397
+    },
+    {
+      "name": "v2fly-facebook-dev",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/facebook-dev",
+      "sha256": "c00b93eb804f470c2c9fae4ebae4e87539afbfdde3d52dbaf3f74d9b6ab96467",
+      "domain_rules": 44
+    },
+    {
+      "name": "v2fly-instagram",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/instagram",
+      "sha256": "e392526b75e27218f874590d0db99b5e009fb0b7679095f0eac48a4ee3fb6413",
+      "domain_rules": 74
+    },
+    {
+      "name": "v2fly-messenger",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/messenger",
+      "sha256": "c8ef00eed5f51bd8d8ec2b73083a3ef012100c73aac382a76848338ae80c7e29",
+      "domain_rules": 4
+    },
+    {
+      "name": "v2fly-oculus",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/oculus",
+      "sha256": "509b8790893607fd944eef7c01136b7f330f73e6c51ae2941ab3a7cb004e643b",
+      "domain_rules": 17
+    },
+    {
+      "name": "v2fly-threads",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/threads",
+      "sha256": "89e3c90ee1900445f0a0acab799d399d9999e39fefd9239b61efb4ac128f7851",
+      "domain_rules": 2
+    },
+    {
+      "name": "v2fly-whatsapp",
+      "family": "geosite",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/whatsapp",
+      "sha256": "62def09a533350c9e5259d1d498ed1da1689ff174f436f51c065260f21f037d2",
+      "domain_rules": 11
+    }
+  ]
+}
