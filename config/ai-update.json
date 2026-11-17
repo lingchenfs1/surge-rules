@@ -1,0 +1,5 @@
+{
+  "max_additions": 25,
+  "blocked_new_suffixes": ["com", "net", "org", "ai", "google.com", "googleapis.com", "amazonaws.com", "cloudfront.net", "cloudflare.com", "azure.com", "azurewebsites.net", "github.com", "github.io"],
+  "meta_roots": ["meta.ai", "meta.com", "metaaivm.com", "metaaiusercontent.com", "muse.ai", "llama.com", "facebook.com", "facebook.net", "fbcdn.net", "fbsbx.com", "instagram.com", "cdninstagram.com", "whatsapp.com", "whatsapp.net", "threads.com", "threads.net", "messenger.com", "oculus.com", "oculuscdn.com"]
+}

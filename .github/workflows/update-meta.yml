@@ -1,4 +1,4 @@
-name: Update Meta rules
+name: Update AI and Meta rules
 on:
   schedule:
     - cron: '23 22 * * *'
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: update-meta
+  group: update-rules
   cancel-in-progress: false
 jobs:
   update:
@@ -20,14 +20,19 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Fetch and merge upstream rules
         run: python3 scripts/update_meta.py
+      - name: Fetch AI sources and exclude Meta
+        run: python3 scripts/update_ai.py
+      - name: Check publication privacy
+        run: python3 scripts/check_privacy.py
       - name: Publish changed rules and source report
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add rules/Meta.list snippets/Meta.txt docs/meta-sync.json
+          git add rules/AI.list snippets/AI.txt docs/ai-build.json sources/ai/*.list sources/ai/manifest.json
           if git diff --cached --quiet; then
             echo 'No changes to publish.'
             exit 0
           fi
-          git commit -m 'chore: sync Meta upstream rules'
+          git commit -m 'chore: sync AI and Meta upstream rules'
           git push origin HEAD:main

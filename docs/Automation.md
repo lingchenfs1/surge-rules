@@ -1,8 +1,8 @@
-# Meta 自动更新
+# AI 与 Meta 自动更新
 
-GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以在 Actions → Update Meta rules → Run workflow 手动运行。GitHub 定时任务可能延迟；公开仓库长期无活动时，定时任务可能被平台停用，请留意 Actions 状态。
+GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以在 Actions → Update AI and Meta rules → Run workflow 手动运行。GitHub 定时任务可能延迟；公开仓库长期无活动时，定时任务可能被平台停用，请留意 Actions 状态。
 
-## 发布方式
+## Meta 发布方式
 
 - 拉取 `config/meta-upstreams.json` 中的 15 份上游文件。
 - 保留当前规则，只补充缺项，不自动删除已收录域名；父后缀可替代重复的子域规则。
@@ -13,6 +13,10 @@ GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以�
 - 只出现于一个来源家族的候选记录在 `docs/meta-sync.json` 的 pending 中，等待人工复核。
 - 任一来源失败、无有效域名或单次新增超过 25 条时任务失败，不提交部分结果。
 - 更新 `rules/Meta.list`、`snippets/Meta.txt` 和来源哈希报告；有变化才提交到 main，不产生每日空提交。
+
+## AI 发布方式
+
+Meta 同步完成后，再通过 scripts/update_ai.py 同步 9 份 AI 清单、增量去重、移除 Meta 条目并运行隐私扫描。AI 抓取及构建在临时目录完成，失败不覆盖发布文件；整个工作流任一步失败均不推送。新域名可自动补充，新关键词/IP/ASN/URL 正则待人工复核。详见 [AI 规则说明](AI.md)。
 
 订阅地址保持不变。工作流仅使用 GitHub 提供的临时 GITHUB_TOKEN，权限为本仓库 contents:write，无需保存个人令牌。checkout 固定到提交 SHA；上游仅作为数据解析，绝不执行。
 
@@ -25,3 +29,5 @@ CI 使用 Python 标准库解析、格式校验、去重和测试。GitHub Linux
 ## 隐私
 
 后续人工提交使用 GitHub noreply 邮箱，自动提交使用 github-actions[bot] noreply 邮箱。仓库仅保存规则和公开上游资料，不应提交个人完整配置、节点凭据、设备身份或请求日志。
+
+发布前扫描跟踪文件及新增文件中的个人邮箱、常见令牌、私钥、本机用户路径、MAC 和私网 IPv4；检测到风险时失败。扫描不是所有敏感信息的完备证明，仍须避免提交个人数据。

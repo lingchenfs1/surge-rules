@@ -8,7 +8,7 @@
 | --- | --- | ---: | --- |
 | [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 见[同步报告](docs/meta-sync.json) | 自动检查 |
 
-AI 规则已新增：[148 条规则](rules/AI.list) · [使用及范围说明](docs/AI.md) · [可选进程规则](snippets/AI-processes.txt)。AI 当前为 2026-11-17 快照，Meta 自动更新任务保持原有范围。
+AI 规则：[规则集](rules/AI.list) · [使用及范围说明](docs/AI.md) · [可选进程规则](snippets/AI-processes.txt)。AI 与 Meta 均每日自动检查；AI 发布规则排除 Meta，当前数量见 [AI 同步报告](docs/ai-build.json)。
 
 ## 在 Surge 中使用
 
@@ -28,7 +28,7 @@ RULE-SET,https://raw.githubusercontent.com/lingchenfs1/surge-rules/main/rules/Me
 
 ## 自动更新
 
-每天台北时间 **06:23** 在 GitHub 检查上游，自动补充符合条件的缺项、去重并提交；支持手动触发。详见 [自动更新规则与失败处理](docs/Automation.md)，最新来源哈希及待复核项见 [同步报告](docs/meta-sync.json)。
+每天台北时间 **06:23** 在 GitHub 依次检查 Meta 和 AI 上游，自动补充符合条件的缺项、去重并提交；支持手动触发。详见 [自动更新规则与失败处理](docs/Automation.md)，最新来源哈希及待复核项见 [同步报告](docs/meta-sync.json)。
 
 ## 维护约定
 
