@@ -8,6 +8,8 @@
 | --- | --- | ---: | --- |
 | [Meta](rules/Meta.list) | Facebook、Instagram、Threads、WhatsApp、Messenger、Meta AI/Muse、Quest/Oculus，以及相关品牌、开发者和历史兼容域名 | 见[同步报告](docs/meta-sync.json) | 自动检查 |
 
+AI 规则已新增：[148 条规则](rules/AI.list) · [使用及范围说明](docs/AI.md) · [可选进程规则](snippets/AI-processes.txt)。AI 当前为 2026-11-17 快照，Meta 自动更新任务保持原有范围。
+
 ## 在 Surge 中使用
 
 在已有配置的 `[Rule]` 段添加以下规则，将 `META` 替换为已有策略组或节点名称：

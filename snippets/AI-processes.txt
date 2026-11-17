@@ -1,0 +1,4 @@
+# Optional macOS-only rules from the existing configuration.
+# Applies to all traffic from these applications. Keep their placement intentional.
+PROCESS-NAME,/Applications/Claude.app/,AI
+PROCESS-NAME,/Applications/Alma.app/,AI

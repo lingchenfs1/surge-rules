@@ -1,0 +1,1080 @@
+{
+  "date": "2026-11-17",
+  "expanded_destination_rules": 294,
+  "exact_duplicates_removed": 132,
+  "covered_domain_rules_removed": [
+    {
+      "rule": "DOMAIN,anthropic.auth0.com",
+      "covered_by": "DOMAIN-SUFFIX,auth0.com"
+    },
+    {
+      "rule": "DOMAIN,cdn.anthropic.com",
+      "covered_by": "DOMAIN-SUFFIX,anthropic.com"
+    },
+    {
+      "rule": "DOMAIN,generativelanguage.googleapis.com",
+      "covered_by": "DOMAIN-SUFFIX,generativelanguage.googleapis.com"
+    },
+    {
+      "rule": "DOMAIN,api.jetbrains.ai",
+      "covered_by": "DOMAIN-SUFFIX,jetbrains.ai"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,events.statsigapi.net",
+      "covered_by": "DOMAIN-SUFFIX,statsigapi.net"
+    },
+    {
+      "rule": "DOMAIN,makersuite.google.com",
+      "covered_by": "DOMAIN-SUFFIX,makersuite.google.com"
+    },
+    {
+      "rule": "DOMAIN,api.statsig.com",
+      "covered_by": "DOMAIN-SUFFIX,api.statsig.com"
+    },
+    {
+      "rule": "DOMAIN,copilot.microsoft.com",
+      "covered_by": "DOMAIN-SUFFIX,copilot.microsoft.com"
+    },
+    {
+      "rule": "DOMAIN,aistudio.google.com",
+      "covered_by": "DOMAIN-SUFFIX,aistudio.google.com"
+    },
+    {
+      "rule": "DOMAIN,api.groq.com",
+      "covered_by": "DOMAIN-SUFFIX,groq.com"
+    },
+    {
+      "rule": "DOMAIN,bard.google.com",
+      "covered_by": "DOMAIN-SUFFIX,bard.google.com"
+    },
+    {
+      "rule": "DOMAIN,console.groq.com",
+      "covered_by": "DOMAIN-SUFFIX,groq.com"
+    },
+    {
+      "rule": "DOMAIN,gemini.google.com",
+      "covered_by": "DOMAIN-SUFFIX,gemini.google.com"
+    },
+    {
+      "rule": "DOMAIN,notebooklm.google.com",
+      "covered_by": "DOMAIN-SUFFIX,notebooklm.google.com"
+    }
+  ],
+  "rule_count": 148,
+  "rules": [
+    {
+      "rule": "DOMAIN-SUFFIX,chatgpt.site",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+        "manual"
+      ]
+    },
+    {
+      "rule": "IP-CIDR6,2607:6bc0::/32,no-resolve",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "IP-CIDR,160.79.104.0/21,no-resolve",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "IP-ASN,399358,no-resolve",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,cdn.usefathom.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,intercomcdn.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,intercom.io",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,sift",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,sentry",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,datadog",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,browser-intake-us5-datadoghq.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,statsigapi.net",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,sentry.io",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,anthropic-com.ghost.io",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,servd-anthropic-website.b-cdn.net",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,anthropic.com.cdn.cloudflare.net",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudeusercontent.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudemcpcontent.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudemcpclient.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,clau.de",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claude.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claude.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,anthropic.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,generativelanguage",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,colab.research.google.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,colab",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,apis.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,content-developerprofiles-pa.googleapis.com",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,developerprofiles",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,sora",
+      "sources": [
+        "manual"
+      ]
+    },
+    {
+      "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,g.ai",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,x.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ai.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,dify.ai",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,meta.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,poe.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,chat.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,grok.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,groq.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,sora.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,cursor.sh",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,jasper.ai",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,openart.ai",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,chatgpt.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,clipdrop.co",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,deepmind.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,ai.google.dev",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,cloud.zed.dev",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,gemini.google",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,oaistatic.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,openrouter.ai",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,perplexity.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,api.github.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bard.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,deepmind.google",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,jules.google.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,gemini.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,notebooklm.google",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,antigravity.google",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,server.codeium.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,aida.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,aistudio.google.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,generativeai.google",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,aicode.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,inference.codeium.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,makersuite.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,notebooklm.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,antigravity-unleash.goog",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,geller-pa.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,gateway.ai.cloudflare.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,aisandbox-pa.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,cloudcode-pa.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,server.self-serve.windsurf.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,robinfrontend-pa.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,alkalicore-pa.clients6.google.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,daily-cloudcode-pa.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,generativelanguage.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,openai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "URL-REGEX,https://www\\.google\\.com/.*continue=https://gemini\\.google\\.com.+",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/ai.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,cp4.cloudflare.com,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,apple-relay.apple.com,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,gspe1-ssl.ls.apple.com,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,apple-relay.cloudflare.com,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,apple-relay.fastly-edge.com,extended-matching",
+      "sources": [
+        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
+      ]
+    },
+    {
+      "rule": "DOMAIN,browser-intake-datadoghq.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,chat.openai.com.cdn.cloudflare.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,openai-api.arkoselabs.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,openaicomproductionae4b.blob.core.windows.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,production-openaicom-storage.azureedge.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,static.cloudflareinsights.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,algolia.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,api.statsig.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,auth0.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,chatgpt.livekit.cloud",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,client-api.arkoselabs.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,featuregates.org",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,host.livekit.cloud",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,identrust.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,launchdarkly.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,oaiusercontent.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,observeit.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,openai.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,openaiapi-site.azureedge.net",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,openaicom.imgix.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,segment.io",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,stripe.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,turn.livekit.cloud",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "IP-CIDR,24.199.123.28/32,no-resolve",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "IP-CIDR,64.23.132.171/32,no-resolve",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "IP-ASN,20473,no-resolve",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,alkalimakersuite-pa.clients6.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,api.msn.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,assets.msn.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,gateway.bingviz.microsoft.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,gateway.bingviz.microsoftapp.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,in.appcenter.ms",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,location.microsoft.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,odc.officeapps.live.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,r.bing.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,self.events.data.microsoft.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,services.bingapis.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,sydney.bing.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,www.bing.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,api.microsoftapp.net",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,challenges.cloudflare.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,edgeservices.bing.com",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,openaicom-api",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "IP-ASN,14061,no-resolve",
+      "sources": [
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,anthropic",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,claude",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,api.githubcopilot.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,api.together.xyz",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,copilot-proxy.githubusercontent.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ai.azure.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,copilot.cloud.microsoft",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,copilot.microsoft.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,cursor.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,grazie.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,grazie.aws.intellij.net",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,jetbrains.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,mistral.ai",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    }
+  ]
+}

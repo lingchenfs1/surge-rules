@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-17",
+  "sources": [
+    {
+      "id": 0,
+      "url": "https://ruleset.skk.moe/List/non_ip/ai.conf",
+      "lines": 59,
+      "sha256": "d03b69fe837f0cdb438dd36c18b70ef601d664c92295a7f477a7958a66fca339",
+      "file": "00.list",
+      "extended_matching": false
+    },
+    {
+      "id": 1,
+      "url": "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf",
+      "lines": 6,
+      "sha256": "728d4a842e4507e042b929ed599b9a9a3de4e89ba4a29438594470dd40c1a5f8",
+      "file": "01.list",
+      "extended_matching": true
+    },
+    {
+      "id": 2,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+      "lines": 35,
+      "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+      "file": "02.list",
+      "extended_matching": false
+    },
+    {
+      "id": 3,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list",
+      "lines": 35,
+      "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+      "file": "03.list",
+      "extended_matching": false
+    },
+    {
+      "id": 4,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
+      "lines": 3,
+      "sha256": "870e7e25d798e7f00338507f773b0eea4dfd15e25e9df0a27d5ae421ae1ab378",
+      "file": "04.list",
+      "extended_matching": false
+    },
+    {
+      "id": 5,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
+      "lines": 10,
+      "sha256": "3dc3871ee3dcd4045d32794de6b8e5ffd9123afb71d67b3f1115b5dd3d53e619",
+      "file": "05.list",
+      "extended_matching": false
+    },
+    {
+      "id": 6,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+      "lines": 13,
+      "sha256": "db8f69154426dca76792ab80b3ad6b0e2d078ebe0e52e76faec1724245a4ec49",
+      "file": "06.list",
+      "extended_matching": false
+    },
+    {
+      "id": 7,
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
+      "lines": 51,
+      "sha256": "12773330de34b84b7fd2f3f2af598480ea62d8574d8e9b8ae9d011a53c044d39",
+      "file": "07.list",
+      "extended_matching": false
+    },
+    {
+      "id": 8,
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+      "lines": 49,
+      "sha256": "63e70895ac8c04c3b28965dc0b4ba9ceb3a1313a66b49487ed96005debc97e1e",
+      "file": "08.list",
+      "extended_matching": false
+    }
+  ]
+}
