@@ -1,0 +1,15 @@
+# OPTIONAL shared dependencies; may affect other apps | See docs/Claude.md
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN,cdn.usefathom.com
+DOMAIN,formulae.brew.sh
+DOMAIN,github.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN,registry.npmjs.org
+DOMAIN,storage.googleapis.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net

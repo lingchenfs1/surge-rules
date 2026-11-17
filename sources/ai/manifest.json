@@ -34,14 +34,6 @@
       "extended_matching": false
     },
     {
-      "id": 4,
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
-      "lines": 3,
-      "sha256": "870e7e25d798e7f00338507f773b0eea4dfd15e25e9df0a27d5ae421ae1ab378",
-      "file": "04.list",
-      "extended_matching": false
-    },
-    {
       "id": 5,
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
       "lines": 10,

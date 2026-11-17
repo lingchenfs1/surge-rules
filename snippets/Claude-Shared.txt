@@ -1,0 +1,15 @@
+# OPTIONAL shared dependencies | See docs/Claude.md
+DOMAIN,browser-intake-us5-datadoghq.com,CLAUDE
+DOMAIN,cdn.usefathom.com,CLAUDE
+DOMAIN,formulae.brew.sh,CLAUDE
+DOMAIN,github.com,CLAUDE
+DOMAIN,http-intake.logs.us5.datadoghq.com,CLAUDE
+DOMAIN,raw.githubusercontent.com,CLAUDE
+DOMAIN,registry.npmjs.org,CLAUDE
+DOMAIN,storage.googleapis.com,CLAUDE
+DOMAIN-SUFFIX,intercom.io,CLAUDE
+DOMAIN-SUFFIX,intercomcdn.com,CLAUDE
+DOMAIN-SUFFIX,segment.com,CLAUDE
+DOMAIN-SUFFIX,segment.io,CLAUDE
+DOMAIN-SUFFIX,sentry.io,CLAUDE
+DOMAIN-SUFFIX,statsigapi.net,CLAUDE

@@ -36,7 +36,7 @@ def main():
     with tempfile.TemporaryDirectory() as directory:
         stage=Path(directory)
         for d in ('sources/ai','config','rules','snippets','docs'):(stage/d).mkdir(parents=True,exist_ok=True)
-        for file in ('sources/ai/manual.list','config/ai-update.json','rules/AI.list','rules/Meta.list'):
+        for file in ('sources/ai/manual.list','config/ai-update.json','rules/AI.list','rules/Meta.list','rules/Claude.list','config/claude.json'):
             shutil.copyfile(ROOT/file,stage/file)
         for source,data in downloaded:(stage/'sources/ai'/source['file']).write_bytes(data)
         manifest['sources']=[s for s,d in downloaded]

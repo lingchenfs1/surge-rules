@@ -1,0 +1,143 @@
+{
+  "core_rule_count": 16,
+  "shared_rule_count": 14,
+  "pending": [
+    {
+      "rule": "DOMAIN-KEYWORD,datadog",
+      "reason": "Non-domain rule not auto-adopted"
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,sentry",
+      "reason": "Non-domain rule not auto-adopted"
+    },
+    {
+      "rule": "DOMAIN-KEYWORD,sift",
+      "reason": "Non-domain rule not auto-adopted"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,ant.dev",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,anthropic.team",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,antspace.dev",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,chatbotclaude.com",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claude.app",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claude.new",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claude.site",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudeacademy.com",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudepages.dev",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "DOMAIN-SUFFIX,claudestudio.com",
+      "families": [
+        "geosite"
+      ],
+      "reason": "New root or third-party host requires ownership review"
+    },
+    {
+      "rule": "IP-CIDR,160.79.104.0/21,no-resolve",
+      "reason": "Non-domain rule not auto-adopted"
+    },
+    {
+      "rule": "IP-CIDR6,2607:6bc0::/32,no-resolve",
+      "reason": "Non-domain rule not auto-adopted"
+    }
+  ],
+  "sources": [
+    {
+      "name": "v2fly",
+      "family": "geosite",
+      "format": "v2fly",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic",
+      "file": "v2fly.txt",
+      "sha256": "59ad6a25a6d9759995777fe98f2cf30675199fad00546a0ffe027b95ec0776f0",
+      "rule_count": 21
+    },
+    {
+      "name": "metacubex",
+      "family": "geosite",
+      "format": "surge",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.list",
+      "file": "metacubex.txt",
+      "sha256": "3ca6cf7858c12a273c149326cc90086e20c5121188b112fb7c55f3d4f6911cd2",
+      "rule_count": 21
+    },
+    {
+      "name": "blackmatrix7",
+      "family": "blackmatrix7",
+      "format": "surge",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
+      "file": "blackmatrix7.txt",
+      "sha256": "870e7e25d798e7f00338507f773b0eea4dfd15e25e9df0a27d5ae421ae1ab378",
+      "rule_count": 3
+    },
+    {
+      "name": "erwanjun",
+      "family": "erwanjun",
+      "format": "surge",
+      "url": "https://raw.githubusercontent.com/erwanjun/surge-claude-rules/main/Surge/Claude.list",
+      "file": "erwanjun.txt",
+      "sha256": "6765313c9b5d62911db1a571fe5d2adddf9516be7f4290030ae6ac229dc0d093",
+      "rule_count": 28
+    },
+    {
+      "name": "ma-wenqian",
+      "family": "ma-wenqian",
+      "format": "surge",
+      "url": "https://raw.githubusercontent.com/ma-wenqian/ai-proxy-rules/main/rules/claude.list",
+      "file": "ma-wenqian.txt",
+      "sha256": "a24bac2a68a7e2d5ea2dbae127277ce136ef471d787b207e66dcdbddbe91e77f",
+      "rule_count": 12
+    }
+  ]
+}

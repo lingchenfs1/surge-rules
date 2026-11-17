@@ -1,13 +1,13 @@
 # AI 规则整理
 
-日期：2026-11-17。依据当前运行配置中明确指向 AI 策略组的 21 条入口规则整理；其中有 9 条远程 RULE-SET、2 条本机进程规则、10 条其他规则（含 1 条 OR）。只整理并发布仓库文件，没有修改本机配置。
+日期：2026-11-17。依据当前运行配置中明确指向 AI 策略组的 21 条入口规则整理；其中有 9 条远程 RULE-SET、最初 2 条本机进程规则、10 条其他规则（含 1 条 OR）。只整理并发布仓库文件，没有修改本机配置。
 
 ## 交付
 
 - `rules/AI.list`：不带策略的目标规则，当前条数见 `docs/ai-build.json`（接入自动更新并排除 Meta 后首次为 147 条）。
 - `snippets/AI.txt`：同一内容，带 AI 策略占位，可粘贴到 [Rule]。
-- `snippets/AI-processes.txt`：2 条可选 macOS 进程规则，独立存放；不包含用户名或设备身份。
-- `sources/ai/`：11 份公开上游原文快照（保留作者和许可注释）、脱敏的手工目标规则以及 URL/哈希清单。
+- `snippets/AI-processes.txt`：目前仅保留 Alma；Claude Desktop 已迁移到 Claude-processes.txt，独立存放；不包含用户名或设备身份。
+- `sources/ai/`：当前 10 份订阅上游快照（旧 Claude 04.list 仅作历史审计）（保留作者和许可注释）、脱敏的手工目标规则以及 URL/哈希清单。
 - `docs/ai-build.json`：逐条来源、数量及被父后缀覆盖的条目记录。
 - `scripts/build_ai.py`：从已保存快照和上次发布结果增量重建、去重并排除 Meta；`scripts/update_ai.py` 抓取上游后在临时目录验证，通过后更新发布文件。均不访问本机 Surge。
 
@@ -65,7 +65,7 @@ Sukka 原文声明 AGPL-3.0，blackmatrix7 仓库提供 GPL-2.0；上游许可�
 
 ## 每日自动更新
 
-每天台北时间 06:23，先同步 Meta，再检查这里配置的 11 份 AI 上游。新域名从已指定清单补充；已有非 Meta 规则保留，不因上游删除而自动删减。DOMAIN 和 DOMAIN-SUFFIX 自动补充并去重；新关键词、IP、ASN、URL-REGEX 进入报告 pending，不自动扩大匹配范围。共享平台根域的新增也需复核。单次超过 25 条新增、任何来源失败/格式异常/隐私检查失败，整个工作流不提交。
+每天台北时间 06:23，先同步 Meta，再检查这里配置的 10 份 AI 上游。新域名从已指定清单补充；已有非 Meta 规则保留，不因上游删除而自动删减。DOMAIN 和 DOMAIN-SUFFIX 自动补充并去重；新关键词、IP、ASN、URL-REGEX 进入报告 pending，不自动扩大匹配范围。共享平台根域的新增也需复核。单次超过 25 条新增、任何来源失败/格式异常/隐私检查失败，整个工作流不提交。
 
 Meta 排除在每次构建最后执行，包含 config/ai-update.json 的固定根域和当次 Meta.list；上游再次出现 meta.ai 时也不会恢复到 AI.list。原有进程规则是独立的可选文件，仍可能匹配 App 的全部流量，不由本更新器加载或修改。
 
@@ -96,3 +96,7 @@ Copilot 与 Kiro 的五条补充作为有来源的固定规则存入 manual.list
 去重删除的旧条目为 api.githubcopilot.com、server.codeium.com、inference.codeium.com、server.self-serve.windsurf.com，均仍由新后缀覆盖。
 
 范围仅限已选第一批条目，并非上述产品全部网络依赖。Kiro 的第三方登录/组织 SSO、Cursor 的额外对象存储和登录主机、Copilot 云会话等可能还依赖其他地址；当前未对全部产品进行端到端测试。Meta 排除逻辑和现有隐私检查继续生效。
+
+## Claude 独立拆分
+
+2026-11-17 Claude 已独立为 [Claude.list](../rules/Claude.list)，AI 清单移除 15 条 Claude 专属域名/关键词/网络规则，当前为 140 条。自动更新同时排除 Meta 和 Claude；Claude 专项上游已从 AI manifest 移除，AI 当前10源。旧源快照中出现 Claude 仅供审计，不会直接进入发布结果。共享服务继续保留，使用时把 Claude.list 放在 AI.list 前；可选共享依赖和边界见 [Claude说明](Claude.md)。本文早前148/147/155数量为历史阶段记录，当前数量以同步报告为准。

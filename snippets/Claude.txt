@@ -1,0 +1,17 @@
+# Claude dedicated rules | See docs/Claude.md
+DOMAIN,anthropic-com.ghost.io,CLAUDE
+DOMAIN,anthropic.auth0.com,CLAUDE
+DOMAIN,anthropic.com.cdn.cloudflare.net,CLAUDE
+DOMAIN,servd-anthropic-website.b-cdn.net,CLAUDE
+DOMAIN-SUFFIX,anthropic.com,CLAUDE
+DOMAIN-SUFFIX,clau.de,CLAUDE
+DOMAIN-SUFFIX,claude.ai,CLAUDE
+DOMAIN-SUFFIX,claude.com,CLAUDE
+DOMAIN-SUFFIX,claude.dev,CLAUDE
+DOMAIN-SUFFIX,claudemcpclient.com,CLAUDE
+DOMAIN-SUFFIX,claudemcpcontent.com,CLAUDE
+DOMAIN-SUFFIX,claudeusercontent.com,CLAUDE
+IP-ASN,399358,CLAUDE,no-resolve
+IP-CIDR,153.61.224.0/22,CLAUDE,no-resolve
+IP-CIDR,160.79.104.0/23,CLAUDE,no-resolve
+IP-CIDR6,2607:6bc0::/48,CLAUDE,no-resolve

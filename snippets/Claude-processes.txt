@@ -1,0 +1,3 @@
+# Optional macOS-only rule; CLAUDE must be an existing policy/group.
+# Routes all Claude Desktop traffic, including shared dependencies.
+PROCESS-NAME,/Applications/Claude.app/,CLAUDE

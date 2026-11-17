@@ -4,6 +4,7 @@ import hashlib
 import json
 import ipaddress
 import re
+from claude_rules import belongs_to_claude
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,10 +68,12 @@ def is_meta(rule, meta_rules, roots):
     return False
 
 
-def select_ai(existing, incoming, meta_rules, config):
+def select_ai(existing, incoming, meta_rules, config, claude_config=None, claude_rules=()):
     kept, removed, pending = [], [], []
     existing = set(existing)
     for r in dict.fromkeys(list(sorted(existing)) + incoming):
+        if claude_config and belongs_to_claude(r, claude_config, claude_rules):
+            continue
         if is_meta(r, meta_rules, config['meta_roots']):
             removed.append(','.join(r));continue
         if r not in existing:
@@ -91,6 +94,8 @@ def main(root=ROOT):
     folder = root/'sources/ai'
     manifest=json.loads((folder/'manifest.json').read_text())
     config=json.loads((root/'config/ai-update.json').read_text())
+    claude_config=json.loads((root/'config/claude.json').read_text())
+    claude_rules=list(parse((root/'rules/Claude.list').read_text()))
     existing=list(parse((root/'rules/AI.list').read_text()))
     meta_rules=list(parse((root/'rules/Meta.list').read_text()))
     rows=list(parse((folder/'manual.list').read_text()))
@@ -103,13 +108,14 @@ def main(root=ROOT):
         if not parsed:raise ValueError('Empty AI source')
         for r in parsed:
             rows.append(r);provenance.setdefault(r,set()).add(source['url'])
-    kept, excluded, pending, covered, duplicates, added = select_ai(existing, rows, meta_rules, config)
-    header='# AI routing | auto-maintained; see docs/AI.md\n# Meta-family rules excluded. Sources: sources/ai/\n# Apple Intelligence matching options are preserved per rule.\n'
+    kept, excluded, pending, covered, duplicates, added = select_ai(existing, rows, meta_rules, config, claude_config, claude_rules)
+    excluded_claude=sorted({','.join(r) for r in existing+rows if belongs_to_claude(r,claude_config,claude_rules)})
+    header='# AI routing | auto-maintained; see docs/AI.md\n# Meta and Claude dedicated rules excluded. Sources: sources/ai/\n# Apple Intelligence matching options are preserved per rule.\n'
     (root/'rules/AI.list').write_text(header+'\n'.join(','.join(r) for r in kept)+'\n')
-    (root/'snippets/AI.txt').write_text('# Paste inside [Rule]. AI must be an existing policy/group.\n# Meta excluded; optional process rules are separate: AI-processes.txt\n'+'\n'.join(','.join(list(r[:2])+['AI']+list(r[2:])) for r in kept)+'\n')
-    report={'rule_count':len(kept), 'excluded_meta':excluded, 'pending':pending,
+    (root/'snippets/AI.txt').write_text('# Paste inside [Rule]. AI must be an existing policy/group.\n# Meta and Claude excluded; optional process rules are separate: AI-processes.txt\n'+'\n'.join(','.join(list(r[:2])+['AI']+list(r[2:])) for r in kept)+'\n')
+    report={'rule_count':len(kept), 'excluded_meta':excluded, 'excluded_claude':excluded_claude, 'pending':pending,
         'rules':[{'rule':','.join(r),'sources':sorted(provenance.get(r, {'retained from previous publication'}))} for r in kept]}
     (root/'docs/ai-build.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
-    print(f'{len(kept)} AI rules; {len(added)} additions; {len(excluded)} Meta exclusions; {len(pending)} pending')
+    print(f'{len(kept)} AI rules; {len(added)} additions; {len(excluded)} Meta exclusions; {len(excluded_claude)} Claude exclusions; {len(pending)} pending')
 
 if __name__=='__main__':main()

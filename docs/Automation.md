@@ -1,6 +1,6 @@
-# AI 与 Meta 自动更新
+# AI、Meta 与 Claude 自动更新
 
-GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以在 Actions → Update AI and Meta rules → Run workflow 手动运行。GitHub 定时任务可能延迟；公开仓库长期无活动时，定时任务可能被平台停用，请留意 Actions 状态。
+GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以在 Actions → Update AI Meta and Claude rules → Run workflow 手动运行。GitHub 定时任务可能延迟；公开仓库长期无活动时，定时任务可能被平台停用，请留意 Actions 状态。
 
 ## Meta 发布方式
 
@@ -16,7 +16,7 @@ GitHub Actions 每天 UTC 22:23（次日 Asia/Taipei 06:23）执行，也可以�
 
 ## AI 发布方式
 
-Meta 同步完成后，再通过 scripts/update_ai.py 同步 11 份 AI 清单（含 Cursor、Windsurf 专项源）、增量去重、移除 Meta 条目并运行隐私扫描。AI 抓取及构建在临时目录完成，失败不覆盖发布文件；整个工作流任一步失败均不推送。新域名可自动补充，新关键词/IP/ASN/URL 正则待人工复核。详见 [AI 规则说明](AI.md)。
+Meta 同步完成后，先通过 scripts/update_claude.py 同步5份Claude清单并生成专属/可选共享规则，再通过 scripts/update_ai.py 同步10份AI清单（含 Cursor、Windsurf 专项源）、增量去重、移除 Meta 和 Claude 专属条目并运行隐私扫描。AI 抓取及构建在临时目录完成，失败不覆盖发布文件；整个工作流任一步失败均不推送。新域名可自动补充，新关键词/IP/ASN/URL 正则待人工复核。详见 [AI 规则说明](AI.md)。
 
 订阅地址保持不变。工作流仅使用 GitHub 提供的临时 GITHUB_TOKEN，权限为本仓库 contents:write，无需保存个人令牌。checkout 固定到提交 SHA；上游仅作为数据解析，绝不执行。
 
@@ -31,3 +31,5 @@ CI 使用 Python 标准库解析、格式校验、去重和测试。GitHub Linux
 后续人工提交使用 GitHub noreply 邮箱，自动提交使用 github-actions[bot] noreply 邮箱。仓库仅保存规则和公开上游资料，不应提交个人完整配置、节点凭据、设备身份或请求日志。
 
 发布前扫描跟踪文件及新增文件中的个人邮箱、常见令牌、私钥、本机用户路径、MAC 和私网 IPv4；检测到风险时失败。扫描不是所有敏感信息的完备证明，仍须避免提交个人数据。
+
+Claude 自动更新边界、未知域名待复核和可选共享依赖说明见 [Claude](Claude.md)。

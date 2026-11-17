@@ -1,7 +1,16 @@
 {
-  "rule_count": 155,
+  "rule_count": 140,
   "excluded_meta": [
     "DOMAIN-SUFFIX,meta.ai"
+  ],
+  "excluded_claude": [
+    "DOMAIN-KEYWORD,anthropic",
+    "DOMAIN-KEYWORD,claude",
+    "DOMAIN-SUFFIX,anthropic.com",
+    "DOMAIN-SUFFIX,clau.de",
+    "DOMAIN-SUFFIX,claude.ai",
+    "DOMAIN-SUFFIX,claude.com",
+    "DOMAIN-SUFFIX,claudeusercontent.com"
   ],
   "pending": [],
   "rules": [
@@ -55,18 +64,6 @@
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BardAI/BardAI.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list"
-      ]
-    },
-    {
-      "rule": "DOMAIN,anthropic-com.ghost.io",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN,anthropic.com.cdn.cloudflare.net",
-      "sources": [
-        "manual"
       ]
     },
     {
@@ -140,7 +137,6 @@
     {
       "rule": "DOMAIN,cdn.usefathom.com",
       "sources": [
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
         "manual"
       ]
     },
@@ -316,12 +312,6 @@
       ]
     },
     {
-      "rule": "DOMAIN,servd-anthropic-website.b-cdn.net",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
       "rule": "DOMAIN,services.bingapis.com",
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
@@ -352,18 +342,6 @@
       "rule": "DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com",
       "sources": [
         "https://ruleset.skk.moe/List/non_ip/ai.conf"
-      ]
-    },
-    {
-      "rule": "DOMAIN-KEYWORD,anthropic",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
-      ]
-    },
-    {
-      "rule": "DOMAIN-KEYWORD,claude",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
       ]
     },
     {
@@ -455,15 +433,6 @@
       ]
     },
     {
-      "rule": "DOMAIN-SUFFIX,anthropic.com",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
-        "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "manual"
-      ]
-    },
-    {
       "rule": "DOMAIN-SUFFIX,api.microsoftapp.net",
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
@@ -541,49 +510,6 @@
       "rule": "DOMAIN-SUFFIX,chatgpt.site",
       "sources": [
         "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,clau.de",
-      "sources": [
-        "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,claude.ai",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list",
-        "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,claude.com",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
-        "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,claudemcpclient.com",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,claudemcpcontent.com",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
-      "rule": "DOMAIN-SUFFIX,claudeusercontent.com",
-      "sources": [
-        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
         "manual"
       ]
     },
@@ -1023,18 +949,6 @@
       ]
     },
     {
-      "rule": "IP-ASN,399358,no-resolve",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
-      "rule": "IP-CIDR,160.79.104.0/21,no-resolve",
-      "sources": [
-        "manual"
-      ]
-    },
-    {
       "rule": "IP-CIDR,24.199.123.28/32,no-resolve",
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
@@ -1048,12 +962,6 @@
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OpenAI/OpenAI.list"
-      ]
-    },
-    {
-      "rule": "IP-CIDR6,2607:6bc0::/32,no-resolve",
-      "sources": [
-        "manual"
       ]
     },
     {
