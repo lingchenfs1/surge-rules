@@ -45,6 +45,7 @@
     {
       "rule": "DOMAIN-SUFFIX,claude.app",
       "families": [
+        "erwanjun",
         "geosite"
       ],
       "reason": "New root or third-party host requires ownership review"
@@ -127,8 +128,8 @@
       "format": "surge",
       "url": "https://raw.githubusercontent.com/erwanjun/surge-claude-rules/main/Surge/Claude.list",
       "file": "erwanjun.txt",
-      "sha256": "6765313c9b5d62911db1a571fe5d2adddf9516be7f4290030ae6ac229dc0d093",
-      "rule_count": 28
+      "sha256": "89fea507e7aea5225d91ff588962d719862f53cd73c7a9867de093d9524d8ef7",
+      "rule_count": 29
     },
     {
       "name": "ma-wenqian",
