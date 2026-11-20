@@ -4,6 +4,8 @@
     "DOMAIN-SUFFIX,meta.ai"
   ],
   "excluded_claude": [
+    "DOMAIN,bridge.claudeusercontent.com",
+    "DOMAIN,claude.site",
     "DOMAIN-KEYWORD,anthropic",
     "DOMAIN-KEYWORD,claude",
     "DOMAIN-SUFFIX,anthropic.com",
