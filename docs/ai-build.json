@@ -1,5 +1,5 @@
 {
-  "rule_count": 140,
+  "rule_count": 143,
   "excluded_meta": [
     "DOMAIN-SUFFIX,meta.ai"
   ],
@@ -14,7 +14,12 @@
     "DOMAIN-SUFFIX,claude.com",
     "DOMAIN-SUFFIX,claudeusercontent.com"
   ],
-  "pending": [],
+  "pending": [
+    {
+      "rule": "DOMAIN-KEYWORD,antigravity",
+      "reason": "New keyword/IP/ASN/URL rule requires review"
+    }
+  ],
   "rules": [
     {
       "rule": "DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
@@ -211,6 +216,18 @@
       ]
     },
     {
+      "rule": "DOMAIN,geminiweb-pa.clients.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,geminiweb-pa.clients6.google.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
+      ]
+    },
+    {
       "rule": "DOMAIN,gspe1-ssl.ls.apple.com,extended-matching",
       "sources": [
         "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf"
@@ -232,6 +249,12 @@
       "rule": "DOMAIN,location.microsoft.com",
       "sources": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list"
+      ]
+    },
+    {
+      "rule": "DOMAIN,notebooklm-pa.googleapis.com",
+      "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list"
       ]
     },
     {
@@ -692,6 +715,7 @@
     {
       "rule": "DOMAIN-SUFFIX,grok.com",
       "sources": [
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
         "https://ruleset.skk.moe/List/non_ip/ai.conf"
       ]
     },

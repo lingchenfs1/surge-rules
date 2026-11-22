@@ -60,8 +60,8 @@
     {
       "id": 8,
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
-      "lines": 49,
-      "sha256": "63e70895ac8c04c3b28965dc0b4ba9ceb3a1313a66b49487ed96005debc97e1e",
+      "lines": 55,
+      "sha256": "82a8806f260c92b605f7a6abd2a0f20b79239cba4b578773b2f93151ac3e971b",
       "file": "08.list",
       "extended_matching": false
     },

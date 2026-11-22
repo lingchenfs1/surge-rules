@@ -31,10 +31,13 @@ DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com,AI
 DOMAIN,gateway.ai.cloudflare.com,AI
 DOMAIN,gateway.bingviz.microsoft.net,AI
 DOMAIN,gateway.bingviz.microsoftapp.net,AI
+DOMAIN,geminiweb-pa.clients.google.com,AI
+DOMAIN,geminiweb-pa.clients6.google.com,AI
 DOMAIN,gspe1-ssl.ls.apple.com,AI,extended-matching
 DOMAIN,in.appcenter.ms,AI
 DOMAIN,jules.google.com,AI
 DOMAIN,location.microsoft.com,AI
+DOMAIN,notebooklm-pa.googleapis.com,AI
 DOMAIN,odc.officeapps.live.com,AI
 DOMAIN,openai-api.arkoselabs.com,AI
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
