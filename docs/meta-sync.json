@@ -6,7 +6,7 @@
       "name": "metacubex-meta",
       "family": "geosite",
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/meta.list",
-      "sha256": "fa0cd6dad3bba2b41ad90616bd0ae699e5590ace95f87a64014a07992a6097fa",
+      "sha256": "40309e9d69f24adfdc3dd491f86a74d7ebca641608570a20dc37451817ed084a",
       "domain_rules": 556
     },
     {
